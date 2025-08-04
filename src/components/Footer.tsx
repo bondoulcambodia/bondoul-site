@@ -1,3 +1,10 @@
+import {
+  IconBrandFacebook,
+  IconBrandLinkedin,
+  IconBrandTelegram,
+  IconBrandTiktok,
+} from "@tabler/icons-react";
+
 const Footer = () => {
   return (
     <footer className="py-12 px-6 bg-card border-t border-border">
@@ -6,34 +13,73 @@ const Footer = () => {
           <div className="col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">Bondoul</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Revolutionizing job applications with tailored CVs that match every opportunity.
+              We bring together helpful tools and a variety of opportunities —
+              jobs, internships, scholarships, events, and more. Bondoul is the
+              friend you need for your career journey.
             </p>
             <p className="text-sm text-muted-foreground">
-              Currently in MVP development. Testing the hypothesis that job seekers want multiple CVs for different positions.
+              We are currently in MVP Development.
             </p>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Product</h4>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#pricing" className="hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#testimonials" className="hover:text-primary transition-colors">Testimonials</a></li>
-            </ul>
+            <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
+            <div className="flex space-x-4">
+              <a
+                href="https://t.me/bondoul_internship"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <IconBrandTelegram />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1FTgL5zf8P/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <IconBrandLinkedin />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1FTgL5zf8P/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <IconBrandFacebook />
+              </a>
+              <a
+                href="https://www.tiktok.com/@bondoulinternship?_t=ZS-8ybFxwMQM8z&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <IconBrandTiktok />
+              </a>
+            </div>
           </div>
-          
+
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Company</h4>
+            <h4 className="font-semibold text-foreground mb-4">Contact Us</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="#privacy" className="hover:text-primary transition-colors">Privacy</a></li>
+              <li>
+                <a
+                  href="mailto:bondoulcambodia@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  bondoulcambodia@gmail.com
+                </a>
+              </li>
+              <li>
+                <p>Phnom Penh, Cambodia</p>
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Bondoul. All rights reserved. This is an MVP for hypothesis testing.</p>
+          <p>&copy; 2025 Bondoul. All rights reserved.</p>
         </div>
       </div>
     </footer>

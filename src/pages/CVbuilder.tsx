@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/CV-Hero";
 import ProblemSolution from "@/components/ProblemSolution";
-import Benefits from "@/components/Benefits";
+import Benefits from "@/components/CV-Benefits";
 import SocialProof from "@/components/SocialProof";
-import CallToAction from "@/components/CallToAction";
+import CallToAction from "@/components/CV-CallToAction";
 import Footer from "@/components/Footer";
 
 const CVbuilder = () => {
