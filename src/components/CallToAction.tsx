@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { trackEvent } from "@/hooks/useAnalytics";
 
 const CallToAction = () => {
   const [email, setEmail] = useState("");
@@ -9,6 +10,7 @@ const CallToAction = () => {
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+      trackEvent("Button", "Click", "Get Started");
       toast({
         title: "Welcome to the future of job applications!",
         description: "We'll send you early access as soon as it's ready.",

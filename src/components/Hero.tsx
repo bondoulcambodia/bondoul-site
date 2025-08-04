@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-bg.jpg";
+import { trackEvent } from "@/hooks/useAnalytics";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -10,12 +11,21 @@ const Hero = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+      trackEvent("Button", "Click", "Join Waitlist");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
       });
       setEmail("");
     }
+  };
+
+  const handleStartBuilding = () => {
+    trackEvent("Button", "Click", "Start Building CVs");
+  };
+
+  const handleWatchDemo = () => {
+    trackEvent("Button", "Click", "Watch Demo");
   };
 
   return (
@@ -40,10 +50,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={handleStartBuilding}>
               Start Building CVs
             </Button>
-            <Button variant="premium" size="lg" className="text-lg px-8 py-4">
+            <Button variant="premium" size="lg" className="text-lg px-8 py-4" onClick={handleWatchDemo}>
               Watch Demo
             </Button>
           </div>

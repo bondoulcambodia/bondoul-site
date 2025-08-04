@@ -6,33 +6,38 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CVbuilder from "./pages/CVbuilder";
-import ReactGA from "react-ga4";
 import { useEffect } from "react";
+import { initGA } from "./hooks/useAnalytics";
+import { usePageTracking } from "./hooks/usePageTracking";
+import { useScrollTracking } from "./hooks/useScrollTracking";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  usePageTracking();
+  useScrollTracking();
+  return (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/cv-builder" element={<CVbuilder />} />
+      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize("G-QLEEZETYK4");
-
-    ReactGA.send({
-      hitType: "pageview",
-      page: window.location.pathname,
-      title: "App.tsx",
-    });
+    initGA();
   }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
         <BrowserRouter basename="/bondoul-site">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/cv-builder" element={<CVbuilder />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <AppContent />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

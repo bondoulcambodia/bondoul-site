@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { trackEvent } from "@/hooks/useAnalytics";
 
 const Index = () => {
+  const handleContactClick = () => {
+    trackEvent("Button", "Click", "Contact Me");
+  };
+
+  const handleMeetingClick = () => {
+    trackEvent("Button", "Click", "Book a Meeting");
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -34,10 +43,10 @@ const Index = () => {
               the web.
             </p>
             <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
-              <Button asChild>
+              <Button asChild onClick={handleContactClick}>
                 <Link to="#">Contact Me</Link>
               </Button>
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" onClick={handleMeetingClick}>
                 <Link to="#">Book a Meeting</Link>
               </Button>
             </div>
