@@ -9,7 +9,7 @@ const CVbuilder = () => {
   return (
     <div className="min-h-screen bg-background">
       <Hero />
-      <ProblemSolution />
+      {/* <ProblemSolution /> */}
       <Benefits />
       <SocialProof />
       <CallToAction />

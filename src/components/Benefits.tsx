@@ -3,36 +3,41 @@ import { CheckCircle, Target, Zap, TrendingUp } from "lucide-react";
 const Benefits = () => {
   const benefits = [
     {
+      icon: TrendingUp,
+      title: "ATS-Friendly",
+      description:
+        "Our CVs are designed to pass Applicant Tracking Systems, so your application gets seen — not stuck in a digital void.",
+    },
+    {
       icon: Target,
-      title: "Laser-Focused Applications",
-      description: "Each CV is tailored to match specific job requirements, increasing your chances of getting noticed."
+      title: "Tailored for Every Job",
+      description:
+        "Easily adapt your core CV to match different roles — without losing your mind over formatting.",
     },
     {
       icon: Zap,
       title: "Save Time & Effort",
-      description: "Stop rewriting your resume from scratch. Build once, customize infinitely."
+      description:
+        "Stop rewriting your resume from scratch. Build once, customize infinitely.",
     },
     {
       icon: CheckCircle,
-      title: "Higher Response Rates",
-      description: "Targeted CVs perform 3x better than generic resumes according to recruitment studies."
+      title: "Professional Design",
+      description:
+        "Your CV will always look polished and modern — no design skills needed.",
     },
-    {
-      icon: TrendingUp,
-      title: "Career Growth",
-      description: "Track which CV versions perform best and refine your approach for maximum impact."
-    }
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-hero">
+    <section className="py-20 px-6 ">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Why Multiple CVs Work Better
+            Why Bondoul's CV Builder
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Research shows that tailored applications receive significantly more responses than generic ones.
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Research shows that tailored applications receive significantly more
+            responses than generic ones.
           </p>
         </div>
 
@@ -40,7 +45,7 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-background/80 backdrop-blur-sm rounded-xl p-6 shadow-elegant hover:shadow-glow transition-smooth hover:scale-105 transform animate-slide-up"
+              className="bg-gradient-hero/90 backdrop-blur-sm rounded-xl p-6 shadow-elegant hover:shadow-glow transition-smooth hover:scale-105 transform animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="mb-4">
@@ -49,9 +54,7 @@ const Benefits = () => {
               <h3 className="text-xl font-semibold mb-3 text-foreground">
                 {benefit.title}
               </h3>
-              <p className="text-muted-foreground">
-                {benefit.description}
-              </p>
+              <p className="text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
         </div>

@@ -1,34 +1,37 @@
 const SocialProof = () => {
   const stats = [
-    { number: "73%", label: "Higher response rate with tailored CVs" },
-    { number: "2.5x", label: "More interview invitations" },
+    { number: "52%", label: "Higher response rate with tailored CVs" },
+    { number: "2.3x", label: "More interview invitations" },
     { number: "45%", label: "Faster job placement" },
-    { number: "12k+", label: "Job seekers already interested" }
+    { number: "2.9k+", label: "Job seekers already interested" },
   ];
 
   const testimonials = [
     {
       name: "Sarah Johnson",
       role: "Marketing Manager",
-      content: "Having different CVs for different roles was a game-changer. I landed 3 interviews in one week!",
-      avatar: "SJ"
+      content:
+        "Having different CVs for different roles was a game-changer. I landed 3 interviews in one week!",
+      avatar: "SJ",
     },
     {
       name: "Mike Chen",
       role: "Software Developer",
-      content: "Finally, a platform that understands that tech roles require different skill highlights.",
-      avatar: "MC"
+      content:
+        "Finally, a platform that understands that tech roles require different skill highlights.",
+      avatar: "MC",
     },
     {
       name: "Elena Rodriguez",
       role: "Project Manager",
-      content: "The ability to customize my experience for each application type increased my success rate dramatically.",
-      avatar: "ER"
-    }
+      content:
+        "The ability to customize my experience for each application type increased my success rate dramatically.",
+      avatar: "ER",
+    },
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="px-6">
       <div className="max-w-6xl mx-auto">
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
@@ -41,24 +44,22 @@ const SocialProof = () => {
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.number}
               </div>
-              <div className="text-muted-foreground">
-                {stat.label}
-              </div>
+              <div className="text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </div>
 
         {/* Testimonials */}
-        <div className="text-center mb-12 animate-fade-in">
+        {/* <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
             What Job Seekers Say
           </h2>
           <p className="text-xl text-muted-foreground">
             Early feedback from professionals testing our hypothesis
           </p>
-        </div>
+        </div> */}
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -70,8 +71,12 @@ const SocialProof = () => {
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                  <div className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </div>
                 </div>
               </div>
               <p className="text-muted-foreground italic">
@@ -79,7 +84,7 @@ const SocialProof = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
