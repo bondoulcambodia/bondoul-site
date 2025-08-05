@@ -1,7 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const location = useLocation();
+  const isMobile = useIsMobile();
 
   const getLinkClass = (path: string) => {
     return location.pathname === path
@@ -19,10 +24,7 @@ const Navbar = () => {
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link
-              to="/cv-builder"
-              className={getLinkClass("/cv-builder")}
-            >
+            <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
               CV Builder
             </Link>
             <Link
@@ -33,6 +35,31 @@ const Navbar = () => {
             </Link>
           </nav>
         </div>
+        {isMobile && (
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left">
+              <div className="grid gap-4 py-4">
+                <Link
+                  to="/cv-builder"
+                  className={getLinkClass("/cv-builder")}
+                >
+                  CV Builder
+                </Link>
+                <Link
+                  to="/subscription"
+                  className={getLinkClass("/subscription")}
+                >
+                  Subscription
+                </Link>
+              </div>
+            </SheetContent>
+          </Sheet>
+        )}
       </div>
     </header>
   );

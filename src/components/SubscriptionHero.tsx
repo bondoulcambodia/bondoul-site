@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { trackEvent } from "@/hooks/useAnalytics";
+import HeroBg from "@/assets/jobseeker-hero-bg.png";
 
 const SubscriptionHero = () => {
   const handleScrollToPricing = () => {
@@ -8,16 +9,29 @@ const SubscriptionHero = () => {
   };
 
   return (
-    <section className="container flex flex-col items-center justify-center text-center py-20">
-      <img src="/placeholder.svg" alt="Recruitment Platform" className="w-full max-w-4xl rounded-lg shadow-lg mb-8" />
-      <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-        Find Your Dream Job, Faster
-      </h1>
-      <p className="max-w-[700px] text-muted-foreground md:text-xl mt-4">
-        Our platform connects you with top companies actively looking for talent. Stop wasting time sending out resumes into the void.
-      </p>
-      <div className="mt-8">
-        <Button onClick={handleScrollToPricing}>Get Started</Button>
+    <section className="relative min-h-screen w-full grid grid-cols-1 lg:grid-cols-2 bg-gradient-hero p-10 md:p-20">
+      <div className="flex flex-col items-center lg:items-start justify-center">
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+          Find Your Dream Job, Faster
+        </h1>
+        <p className="max-w-[700px] text-muted-foreground md:text-xl mt-4">
+          Our platform connects you with top companies actively looking for
+          talent. Stop wasting time sending out resumes into the void.
+        </p>
+        <div className="mt-6">
+          {/* <Button onClick={handleScrollToPricing}>Get Started</Button> */}
+          <Button
+            variant="hero"
+            size="lg"
+            className="text-lg px-8 py-4"
+            onClick={handleScrollToPricing}
+          >
+            Get Started
+          </Button>
+        </div>
+      </div>
+      <div className="flex flex-col items-start justify-center">
+        <img src={HeroBg} />
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const AppContent = () => {
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/cv-builder" element={<CVbuilder />} />
-      <Route path="/subscription" element={<Subscription />} />
+      <Route path="/jobseeker" element={<Subscription />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
