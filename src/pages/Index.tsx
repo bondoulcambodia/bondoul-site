@@ -4,11 +4,11 @@ import { trackEvent } from "@/hooks/useAnalytics";
 
 const Index = () => {
   const handleContactClick = () => {
-    trackEvent("Button", "Click", "Contact Me");
+    trackEvent("Contact Me");
   };
 
   const handleMeetingClick = () => {
-    trackEvent("Button", "Click", "Book a Meeting");
+    trackEvent("Book a Meeting");
   };
 
   return (

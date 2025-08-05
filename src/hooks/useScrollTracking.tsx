@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { trackEvent } from "./useAnalytics";
+import { trackScroll } from "./useAnalytics";
 
 export const useScrollTracking = () => {
   const [scrollDepth, setScrollDepth] = useState(0);
@@ -21,7 +21,7 @@ export const useScrollTracking = () => {
     const thresholds = [25, 50, 75, 100];
     thresholds.forEach((threshold) => {
       if (scrollDepth >= threshold && !trackedDepths.includes(threshold)) {
-        trackEvent("Scroll", "Depth", `${threshold}%`);
+        trackScroll(threshold);
         setTrackedDepths([...trackedDepths, threshold]);
       }
     });

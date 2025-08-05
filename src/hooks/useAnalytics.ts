@@ -14,12 +14,18 @@ export const trackPageView = (path: string) => {
   }
 };
 
-export const trackEvent = (category: string, action: string, label: string) => {
+export const trackEvent = (button_name: string) => {
   if (process.env.NODE_ENV === "production") {
-    ReactGA.event({
-      category,
-      action,
-      label,
+    ReactGA.event("button_click", {
+      button_name,
+    });
+  }
+};
+
+export const trackScroll = (scroll_depth: number) => {
+  if (process.env.NODE_ENV === "production") {
+    ReactGA.event("scroll", {
+      scroll_depth,
     });
   }
 };

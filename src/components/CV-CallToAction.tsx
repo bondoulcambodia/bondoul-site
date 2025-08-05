@@ -11,7 +11,7 @@ const CallToAction = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("Button", "Click", "Join Waitlist CTA");
+      trackEvent("Join Waitlist CTA");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
@@ -23,7 +23,7 @@ const CallToAction = () => {
 
   const handleStartBuilding = () => {
     setShowModal(true);
-    trackEvent("Button", "Click", "Start Building CVs CTA");
+    trackEvent("Start Building CVs CTA");
   };
 
   return (
