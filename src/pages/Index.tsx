@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { trackEvent } from "@/hooks/useAnalytics";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const handleContactClick = () => {
@@ -13,25 +14,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
-          <div className="mr-4 hidden md:flex">
-            <Link to="/" className="mr-6 flex items-center space-x-2">
-              <span className="hidden font-bold sm:inline-block">
-                My Portfolio
-              </span>
-            </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link
-                to="/cv-builder"
-                className="text-foreground/60 transition-colors hover:text-foreground/80"
-              >
-                CV Builder
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Navbar />
       <main className="flex flex-col items-center justify-center flex-1 text-center">
         <div className="container relative pb-10">
           <section className="mx-auto flex max-w-[980px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20">

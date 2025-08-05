@@ -14,11 +14,9 @@ export const trackPageView = (path: string) => {
   }
 };
 
-export const trackEvent = (button_name: string) => {
+export const trackEvent = (action: string, params?: Record<string, any>) => {
   if (process.env.NODE_ENV === "production") {
-    ReactGA.event("button_click", {
-      button_name,
-    });
+    ReactGA.event(action, params);
   }
 };
 

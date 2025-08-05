@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CVbuilder from "./pages/CVbuilder";
+import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
 import { initGA } from "./hooks/useAnalytics";
 import { usePageTracking } from "./hooks/usePageTracking";
@@ -20,6 +21,7 @@ const AppContent = () => {
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/cv-builder" element={<CVbuilder />} />
+      <Route path="/subscription" element={<Subscription />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
