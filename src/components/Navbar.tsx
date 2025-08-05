@@ -19,19 +19,14 @@ const Navbar = () => {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link to="/" className="mr-6 flex items-center space-x-2">
-            <span className="hidden font-bold sm:inline-block">
-              My Portfolio
-            </span>
+            <span className="hidden font-bold sm:inline-block">Home</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
               CV Builder
             </Link>
-            <Link
-              to="/subscription"
-              className={getLinkClass("/subscription")}
-            >
-              Subscription
+            <Link to="/subscription" className={getLinkClass("/subscription")}>
+              Job Seeker
             </Link>
           </nav>
         </div>
@@ -44,10 +39,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="left">
               <div className="grid gap-4 py-4">
-                <Link
-                  to="/cv-builder"
-                  className={getLinkClass("/cv-builder")}
-                >
+                <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
                   CV Builder
                 </Link>
                 <Link
