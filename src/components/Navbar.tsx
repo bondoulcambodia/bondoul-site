@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
               CV Builder
             </Link>
-            <Link to="/subscription" className={getLinkClass("/subscription")}>
+            <Link to="/jobseeker" className={getLinkClass("/jobseeker")}>
               Job Seeker
             </Link>
           </nav>
