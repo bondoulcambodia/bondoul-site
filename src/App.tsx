@@ -9,6 +9,7 @@ import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
 import { initGA } from "./hooks/useAnalytics";
+import Recruiter from "./pages/recruiter";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const AppContent = () => {
       <Route path="/" element={<Index />} />
       <Route path="/cv-builder" element={<CVbuilder />} />
       <Route path="/jobseeker" element={<Subscription />} />
+      <Route path="/recruiter" element={<Recruiter />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>

@@ -28,6 +28,9 @@ const Navbar = () => {
             <Link to="/jobseeker" className={getLinkClass("/jobseeker")}>
               Job Seeker
             </Link>
+            <Link to="/recruiter" className={getLinkClass("/recruiter")}>
+              Recruiter
+            </Link>
           </nav>
         </div>
         {isMobile && (
@@ -46,7 +49,10 @@ const Navbar = () => {
                   CV Builder
                 </Link>
                 <Link to="/jobseeker" className={getLinkClass("/jobseeker")}>
-                  Subscription
+                  Job Seeker
+                </Link>
+                <Link to="/recruiter" className={getLinkClass("/recruiter")}>
+                  recruiter
                 </Link>
               </div>
             </SheetContent>
