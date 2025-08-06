@@ -39,13 +39,13 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="left">
               <div className="grid gap-4 py-4">
+                <Link to="/" className={getLinkClass("/")}>
+                  Home
+                </Link>
                 <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
                   CV Builder
                 </Link>
-                <Link
-                  to="/subscription"
-                  className={getLinkClass("/subscription")}
-                >
+                <Link to="/jobseeker" className={getLinkClass("/jobseeker")}>
                   Subscription
                 </Link>
               </div>
