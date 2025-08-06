@@ -9,14 +9,10 @@ import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
 import { initGA } from "./hooks/useAnalytics";
-import { usePageTracking } from "./hooks/usePageTracking";
-import { useScrollTracking } from "./hooks/useScrollTracking";
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
-  usePageTracking();
-  useScrollTracking();
   return (
     <Routes>
       <Route path="/" element={<Index />} />

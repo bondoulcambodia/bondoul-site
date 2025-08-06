@@ -12,7 +12,7 @@ const Hero = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("join_waitlist_cv_hero");
+      trackEvent("join_waitlist_cv");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",

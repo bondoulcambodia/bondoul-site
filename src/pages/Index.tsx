@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { trackEvent } from "@/hooks/useAnalytics";
 import Navbar from "@/components/Navbar";
+import { usePageTracking } from "@/hooks/usePageTracking";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
 
 const Index = () => {
+  usePageTracking();
+  useScrollTracking();
   const handleContactClick = () => {
     trackEvent("contact_me");
   };

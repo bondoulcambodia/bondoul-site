@@ -5,8 +5,12 @@ import SubscriptionTestimonials from "@/components/SubscriptionTestimonials";
 import SubscriptionPricing from "@/components/SubscriptionPricing";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { usePageTracking } from "@/hooks/usePageTracking";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
 
 const Subscription = () => {
+  usePageTracking();
+  useScrollTracking();
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Navbar />

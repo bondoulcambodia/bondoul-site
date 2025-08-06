@@ -5,8 +5,12 @@ import SocialProof from "@/components/SocialProof";
 import CallToAction from "@/components/CV-CallToAction";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { usePageTracking } from "@/hooks/usePageTracking";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
 
 const CVbuilder = () => {
+  usePageTracking();
+  useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
       <Navbar />

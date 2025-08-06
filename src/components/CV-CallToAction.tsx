@@ -11,7 +11,7 @@ const CallToAction = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("Join Waitlist CTA");
+      trackEvent("join_waitlist_cv");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
