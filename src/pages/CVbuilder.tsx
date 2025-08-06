@@ -1,5 +1,5 @@
 import Hero from "@/components/CV-Hero";
-import ProblemSolution from "@/components/ProblemSolution";
+import ProblemSolution from "@/components/CV-ProblemSolution";
 import Benefits from "@/components/CV-Benefits";
 import SocialProof from "@/components/SocialProof";
 import CallToAction from "@/components/CV-CallToAction";
