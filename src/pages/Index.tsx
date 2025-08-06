@@ -5,11 +5,11 @@ import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const handleContactClick = () => {
-    trackEvent("Contact Me");
+    trackEvent("contact_me");
   };
 
   const handleMeetingClick = () => {
-    trackEvent("Book a Meeting");
+    trackEvent("book_a_meeting");
   };
 
   return (

@@ -12,7 +12,7 @@ const Hero = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("Join Waitlist Hero");
+      trackEvent("join_waitlist_cv_hero");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
@@ -24,17 +24,17 @@ const Hero = () => {
 
   const handleStartBuilding = () => {
     setShowModal(true);
-    trackEvent("Start Building CVs CTA");
+    trackEvent("start_building_cvs");
   };
 
   // const handleWatchDemo = () => {
   //   trackEvent("Button", "Click", "Watch Demo");
   // };
 
-  const handleGetEarlyAccess = () => {
-    setShowModal(true);
-    trackEvent("Start Building CVs CTA");
-  };
+  // const handleGetEarlyAccess = () => {
+  //   setShowModal(true);
+  //   trackEvent("start_building_cvs");
+  // };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

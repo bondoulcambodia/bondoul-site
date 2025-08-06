@@ -5,7 +5,7 @@ import HeroBg from "@/assets/jobseeker-hero-bg.png";
 const SubscriptionHero = () => {
   const handleScrollToPricing = () => {
     document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
-    trackEvent("Scroll to Pricing");
+    trackEvent("scroll_to_pricing");
   };
 
   return (

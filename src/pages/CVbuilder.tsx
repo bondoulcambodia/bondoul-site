@@ -4,10 +4,12 @@ import Benefits from "@/components/CV-Benefits";
 import SocialProof from "@/components/SocialProof";
 import CallToAction from "@/components/CV-CallToAction";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const CVbuilder = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <Hero />
       {/* <ProblemSolution /> */}
       <Benefits />
