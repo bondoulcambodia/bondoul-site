@@ -12,7 +12,7 @@ const Hero = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("join_waitlist_cv");
+      trackEvent("join_waitlist_cv_hero");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
@@ -24,7 +24,7 @@ const Hero = () => {
 
   const handleStartBuilding = () => {
     setShowModal(true);
-    trackEvent("start_building_cvs");
+    trackEvent("start_building_cv_hero");
   };
 
   // const handleWatchDemo = () => {
@@ -55,9 +55,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Forget clunky templates. Bondoul's CV Builder helps you create one
-            strong CV and remix it for different jobs — fast, smart, and
-            stress-free.
+            Stop wasting time on clunky templates. Bondoul’s CV Builder lets you
+            build one strong CV and tweak it for each job. Fast. Simple. No
+            stress.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -120,9 +120,9 @@ const Hero = () => {
                 You're on the VIP list 💌
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Our CV Builder is almost ready — and you'll be among the first
-                to test it out. It's sleek, stress-free, and built just for job
-                seekers like you.
+                Our CV Builder is almost ready. You’ll be one of the first to
+                try it. It’s clean, easy to use, and made for job seekers like
+                you.
               </p>
             </div>
 

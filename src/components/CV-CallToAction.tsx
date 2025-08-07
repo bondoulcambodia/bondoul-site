@@ -11,7 +11,7 @@ const CallToAction = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("join_waitlist_cv");
+      trackEvent("join_waitlist_cv_CTA");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
@@ -23,7 +23,7 @@ const CallToAction = () => {
 
   const handleStartBuilding = () => {
     setShowModal(true);
-    trackEvent("Start Building CVs CTA");
+    trackEvent("start_building_cv_CTA");
   };
 
   return (
@@ -80,9 +80,9 @@ const CallToAction = () => {
                 You're on the VIP list 💌
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Our CV Builder is almost ready — and you'll be among the first
-                to test it out. It's sleek, stress-free, and built just for job
-                seekers like you.
+                Our CV Builder is almost ready. You’ll be one of the first to
+                try it. It’s clean, easy to use, and made for job seekers like
+                you.
               </p>
             </div>
 

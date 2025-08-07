@@ -1,7 +1,7 @@
 const SocialProof = () => {
   const stats = [
-    { number: "52%", label: "Higher response rate with tailored CVs" },
-    { number: "2.3x", label: "More interview invitations" },
+    { number: "60%", label: "Higher response rate" },
+    { number: "2.1x", label: "More interview invitations" },
     { number: "45%", label: "Faster job placement" },
     { number: "2.9k+", label: "Job seekers already interested" },
   ];

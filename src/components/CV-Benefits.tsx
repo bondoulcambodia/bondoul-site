@@ -6,13 +6,13 @@ const Benefits = () => {
       icon: TrendingUp,
       title: "ATS-Friendly",
       description:
-        "Our CVs are designed to pass Applicant Tracking Systems, so your application gets seen — not stuck in a digital void.",
+        "Our CVs are built to pass Applicant Tracking Systems. Your application gets seen, not filtered out.",
     },
     {
       icon: Target,
       title: "Tailored for Every Job",
       description:
-        "Easily adapt your core CV to match different roles — without losing your mind over formatting.",
+        "Quickly adjust your CV for different roles. No messy formatting. No wasted time.",
     },
     {
       icon: Zap,
@@ -24,7 +24,7 @@ const Benefits = () => {
       icon: CheckCircle,
       title: "Professional Design",
       description:
-        "Your CV will always look polished and modern — no design skills needed.",
+        "Your CV will always look clean and modern. No design skills needed.",
     },
   ];
 
@@ -36,8 +36,8 @@ const Benefits = () => {
             Why Bondoul's CV Builder
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Research shows that tailored applications receive significantly more
-            responses than generic ones.
+            Research shows tailored applications get more responses than generic
+            ones. Personalizing your CV and answers makes a real difference.
           </p>
         </div>
 
