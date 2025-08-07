@@ -10,7 +10,7 @@ const SubscriptionPricing = () => {
   return (
     <section id="pricing" className="container py-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">Choose Your Plan</h2>
+        <h2 className="text-4xl md:text-5xl font-bold">Choose Your Plan</h2>
         <p className="text-muted-foreground mt-2">
           Unlock your potential with a plan that fits your needs.
         </p>

@@ -2,7 +2,7 @@ const SubscriptionHowItWorks = () => {
   return (
     <section className="container py-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">How It Works</h2>
+        <h2 className="text-4xl md:text-5xl font-bold">How It Works</h2>
         <p className="text-muted-foreground mt-2">A simple process to connect with your future.</p>
       </div>
       <div className="grid gap-8 md:grid-cols-3">
