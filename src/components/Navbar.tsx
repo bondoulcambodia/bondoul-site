@@ -19,21 +19,26 @@ const Navbar = () => {
   }, []);
 
   const getLinkClass = (path: string) => {
-    const baseClass = "transition-colors hover:text-white/80";
+    const baseClass = "transition-colors hover:text-primary";
     return location.pathname === path
-      ? `text-white ${baseClass}`
-      : `text-white/60 ${baseClass}`;
+      ? `text-primary font-bold ${baseClass}`
+      : `text-muted-foreground ${baseClass}`;
   };
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all ${scrolled ? "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"}`}>
+      className={`sticky top-0 z-50 w-full transition-all ${
+        scrolled
+          ? "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link to="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold text-white">Home</span>
+            <span className="font-bold text-foreground">Home</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="flex items-center space-x-6 text-sm font-medium ">
             <Link to="/cv-builder" className={getLinkClass("/cv-builder")}>
               CV Builder
             </Link>
