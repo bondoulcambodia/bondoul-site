@@ -1,33 +1,80 @@
+import { CheckCircle, Target, Zap } from "lucide-react";
+import SocialProof from "@/components/SocialProof";
+
 const SubscriptionFeatures = () => {
+  const features = [
+    {
+      icon: Zap,
+      title: "AI-Powered Matching",
+      description:
+        "Our algorithm learns your preferences and find the right opportunities for you.",
+      points: [
+        "Smart compatibility scoring",
+        "Preference recommendations",
+        "Success prediction",
+      ],
+    },
+    {
+      icon: Target,
+      title: "Smart Search & Filters",
+      description:
+        "Find exactly what you're looking for with AI-powered search across all opportunity types.",
+      points: [
+        "Salary & timeline filters",
+        "Location-based filters",
+        "Skill & experience matching",
+      ],
+    },
+    {
+      icon: CheckCircle,
+      title: "Personalized Dashboard",
+      description:
+        "Track all your applications, interviews, deadlines, and opportunities in one organized space.",
+      points: [
+        "Application Status tracking",
+        "Interview scheduling",
+        "Progress analytics",
+      ],
+    },
+  ];
+
   return (
-    <section className="container py-20">
-      <div className="grid gap-8 md:grid-cols-3">
-        <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-lg">
-          <div className="p-4 bg-primary/10 rounded-full mb-4">
-            <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197m0 0A6.002 6.002 0 003 21v-1a6 6 0 0112 0v1z"></path></svg>
-          </div>
-          <h3 className="text-2xl font-bold mb-2">Direct Connections</h3>
-          <p className="text-muted-foreground">
-            No more middlemen. Connect directly with hiring managers and get your profile noticed.
+    <section className="py-20">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Why Bondoul Platform
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Our platform is designed to help you find the right opportunities
+            and land your dream job.
           </p>
         </div>
-        <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-lg">
-          <div className="p-4 bg-primary/10 rounded-full mb-4">
-            <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-          </div>
-          <h3 className="text-2xl font-bold mb-2">Personalized Matches</h3>
-          <p className="text-muted-foreground">
-            Our algorithm matches you with jobs that fit your skills and experience.
-          </p>
-        </div>
-        <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg shadow-lg">
-          <div className="p-4 bg-primary/10 rounded-full mb-4">
-            <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v11.494m-9-5.747h18"></path></svg>
-          </div>
-          <h3 className="text-2xl font-bold mb-2">Career Resources</h3>
-          <p className="text-muted-foreground">
-            Access a library of resources to help you ace your interviews and advance your career.
-          </p>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-gradient-hero/90 backdrop-blur-sm rounded-xl p-6 shadow-elegant hover:shadow-glow transition-smooth hover:scale-105 transform animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="mb-4">
+                <feature.icon className="h-12 w-12 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">
+                {feature.title}
+              </h3>
+              <p className="text-muted-foreground">{feature.description}</p>
+              <ul className="mt-4 space-y-2">
+                {feature.points.map((point, i) => (
+                  <li key={i} className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span className="text-muted-foreground">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>

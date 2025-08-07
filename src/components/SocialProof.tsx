@@ -1,9 +1,9 @@
 const SocialProof = () => {
   const stats = [
-    { number: "52%", label: "Higher response rate with tailored CVs" },
-    { number: "2.3x", label: "More interview invitations" },
-    { number: "45%", label: "Faster job placement" },
-    { number: "2.9k+", label: "Job seekers already interested" },
+    { number: "65+", label: "Placements" },
+    { number: "25+", label: "SMEs Onboarded" },
+    { number: "2.9k+", label: "Young Professional already interested" },
+    { number: "2y+", label: "HR Experience" },
   ];
 
   const testimonials = [
@@ -31,10 +31,10 @@ const SocialProof = () => {
   ];
 
   return (
-    <section className="px-6">
+    <section className="px-6 py-20 bg-gray-100 dark:bg-gray-800 rounded-lg">
       <div className="max-w-6xl mx-auto">
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}

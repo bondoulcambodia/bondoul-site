@@ -18,12 +18,14 @@ const Footer = () => {
               friend you need for your career journey.
             </p>
             <p className="text-sm text-muted-foreground">
-              We are currently in MVP Development.
+              We are currently in MVP development stage.
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
+          <div className="">
+            <h4 className="font-semibold text-foreground mb-4">
+              Follow/Contact Us
+            </h4>
             <div className="flex space-x-4">
               <a
                 href="https://t.me/bondoul_internship"
@@ -60,17 +62,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Contact Us</h4>
+          <div className="overflow-clip">
+            <h4 className="font-semibold text-foreground mb-4">Location</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>
+              {/* <li>
                 <a
                   href="mailto:bondoulcambodia@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   bondoulcambodia@gmail.com
                 </a>
-              </li>
+              </li> */}
               <li>
                 <p>Phnom Penh, Cambodia</p>
               </li>

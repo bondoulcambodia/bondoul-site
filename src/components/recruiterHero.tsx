@@ -1,17 +1,18 @@
+import HeroBg from "@/assets/recruiter-hero-bg.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import { trackEvent } from "@/hooks/useAnalytics";
 
-const CallToAction = () => {
+const RecruiterHero = () => {
   const [email, setEmail] = useState("");
   const [showModal, setShowModal] = useState(false);
 
-  const handleEarlyAccess = (e: React.FormEvent) => {
+  const handleRecruiterEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent("join_waitlist_cv");
+      trackEvent("join_waitlist_recruiter");
       toast({
         title: "Thanks for your interest!",
         description: "We'll notify you when Bondoul launches.",
@@ -21,49 +22,41 @@ const CallToAction = () => {
     }
   };
 
-  const handleStartBuilding = () => {
+  const handleRecruiterGetStarted = () => {
     setShowModal(true);
-    trackEvent("Start Building CVs CTA");
+    trackEvent("recruiter_get_started");
   };
 
   return (
-    <>
-      <section className="py-20 px-6 bg-gradient-primary text-white">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Land Your Dream Job?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join thousands of job seekers who are revolutionizing their
-            application strategy
-          </p>
+    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-10 md:pt-20">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${HeroBg})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+          XXXXXX
+          <br />
+          <span className="text-foreground">XXXXXXXXXX</span>
+        </h1>
 
-          <div className="max-w-md mx-auto mb-8">
-            <Button
-              variant="hero"
-              size="lg"
-              className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/95"
-              onClick={handleStartBuilding}
-            >
-              Start Building CVs
-            </Button>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="flex items-center text-sm opacity-80">
-              ✓ Free to join
-            </div>
-            <div className="flex items-center text-sm opacity-80">
-              ✓ No spam, ever
-            </div>
-            <div className="flex items-center text-sm opacity-80">
-              ✓ Early access priority
-            </div>
-          </div>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          Forget clunky templates. Bondoul's CV Builder helps you create one
+          strong CV and remix it for different jobs — fast, smart, and
+          stress-free.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <Button
+            variant="hero"
+            size="lg"
+            className="text-lg px-8 py-4"
+            onClick={handleRecruiterGetStarted}
+          >
+            Get Started
+          </Button>
         </div>
-      </section>
-
-      {/* Modal */}
+      </div>
       {showModal && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-3 sm:p-4">
           <div className="bg-background rounded-2xl p-8 shadow-2xl border border-border/50 max-w-md w-[90%] animate-slide-up relative">
@@ -86,7 +79,7 @@ const CallToAction = () => {
               </p>
             </div>
 
-            <form onSubmit={handleEarlyAccess} className="space-y-4">
+            <form onSubmit={handleRecruiterEarlyAccess} className="space-y-4">
               <Input
                 type="email"
                 placeholder="Enter your email to get notified first!"
@@ -106,8 +99,8 @@ const CallToAction = () => {
           </div>
         </div>
       )}
-    </>
+    </section>
   );
 };
 
-export default CallToAction;
+export default RecruiterHero;

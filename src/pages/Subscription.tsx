@@ -1,18 +1,26 @@
 import SubscriptionHero from "@/components/SubscriptionHero";
 import SubscriptionFeatures from "@/components/SubscriptionFeatures";
-import SubscriptionHowItWorks from "@/components/SubscriptionHowItWorks";
-import SubscriptionTestimonials from "@/components/SubscriptionTestimonials";
+import SocialProof from "@/components/SocialProof";
 import SubscriptionPricing from "@/components/SubscriptionPricing";
+import SubscriptionTestimonials from "@/components/SubscriptionTestimonials";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { usePageTracking } from "@/hooks/usePageTracking";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
 
 const Subscription = () => {
+  usePageTracking();
+  useScrollTracking();
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <Navbar />
       <SubscriptionHero />
       <SubscriptionFeatures />
-      <SubscriptionHowItWorks />
-      <SubscriptionTestimonials />
+      <div className="my-12">
+        <SocialProof />
+      </div>
       <SubscriptionPricing />
+      <SubscriptionTestimonials />
       <Footer />
     </div>
   );

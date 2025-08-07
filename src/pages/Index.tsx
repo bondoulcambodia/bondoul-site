@@ -2,39 +2,111 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { trackEvent } from "@/hooks/useAnalytics";
 import Navbar from "@/components/Navbar";
+import { usePageTracking } from "@/hooks/usePageTracking";
+import { useScrollTracking } from "@/hooks/useScrollTracking";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
-  const handleContactClick = () => {
-    trackEvent("Contact Me");
-  };
+  usePageTracking();
+  useScrollTracking();
 
-  const handleMeetingClick = () => {
-    trackEvent("Book a Meeting");
+  const handleServiceClick = (service: string) => {
+    trackEvent(`navigate_to_${service}`);
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-white">
       <Navbar />
-      <main className="flex flex-col items-center justify-center flex-1 text-center">
-        <div className="container relative pb-10">
-          <section className="mx-auto flex max-w-[980px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20">
-            <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-              Welcome to my Portfolio
+      <main>
+        {/* Hero Section */}
+        <section
+          className="relative bg-cover bg-center py-40"
+          style={{ backgroundImage: "url('/src/assets/hero-bg.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="container relative mx-auto text-center">
+            <h1 className="text-4xl font-bold md:text-6xl">
+              Find Your Dream Job or Perfect Candidate
             </h1>
-            <p className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl">
-              I build accessible, inclusive products and digital experiences for
-              the web.
+            <p className="mt-4 text-lg md:text-xl">
+              We connect talent with opportunity. Explore our services for job
+              seekers and recruiters.
             </p>
-            <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
-              <Button asChild onClick={handleContactClick}>
-                <Link to="#">Contact Me</Link>
-              </Button>
-              <Button asChild variant="outline" onClick={handleMeetingClick}>
-                <Link to="#">Book a Meeting</Link>
-              </Button>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-20">
+          <div className="container mx-auto">
+            <h2 className="mb-12 text-center text-3xl font-bold text-black">
+              Our Services
+            </h2>
+            <div className="grid gap-8 md:grid-cols-3">
+              {/* CV Builder */}
+              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold text-black">
+                  CV Builder
+                </h3>
+                <p className="mb-6 text-gray-600">
+                  Create a professional CV in minutes with our easy-to-use
+                  builder.
+                </p>
+                <Button
+                  asChild
+                  onClick={() => handleServiceClick("cv_builder")}
+                  className="group"
+                >
+                  <Link to="/cv-builder">
+                    Get Started{" "}
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Job Seeker */}
+              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold text-black">
+                  For Job Seekers
+                </h3>
+                <p className="mb-6 text-gray-600">
+                  Find the right job for you and get career advice from our
+                  experts.
+                </p>
+                <Button
+                  asChild
+                  onClick={() => handleServiceClick("jobseeker")}
+                  className="group"
+                >
+                  <Link to="/jobseeker">
+                    Find a Job{" "}
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Recruiter */}
+              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold text-black">
+                  For Recruiters
+                </h3>
+                <p className="mb-6 text-gray-600">
+                  Post job openings and find the best candidates for your
+                  company.
+                </p>
+                <Button
+                  asChild
+                  onClick={() => handleServiceClick("recruiter")}
+                  className="group"
+                >
+                  <Link to="/recruiter">
+                    Post a Job{" "}
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
     </div>
   );

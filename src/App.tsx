@@ -9,19 +9,17 @@ import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
 import { initGA } from "./hooks/useAnalytics";
-import { usePageTracking } from "./hooks/usePageTracking";
-import { useScrollTracking } from "./hooks/useScrollTracking";
+import Recruiter from "./pages/recruiter";
 
 const queryClient = new QueryClient();
 
 const AppContent = () => {
-  usePageTracking();
-  useScrollTracking();
   return (
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/cv-builder" element={<CVbuilder />} />
-      <Route path="/subscription" element={<Subscription />} />
+      <Route path="/jobseeker" element={<Subscription />} />
+      <Route path="/recruiter" element={<Recruiter />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
