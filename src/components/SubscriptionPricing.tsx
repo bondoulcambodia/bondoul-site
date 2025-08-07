@@ -3,7 +3,8 @@ import { trackEvent } from "@/hooks/useAnalytics";
 
 const SubscriptionPricing = () => {
   const handleSubscription = (tier: string, price: string) => {
-    trackEvent("jobseeker_subscription_click", { tier, price });
+    const eventName = `jobseeker_subscription_click_${tier.toLowerCase()}`;
+    trackEvent(eventName, { price });
   };
 
   return (
