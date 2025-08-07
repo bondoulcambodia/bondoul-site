@@ -11,13 +11,13 @@ const SubscriptionHero = () => {
     <section className="container flex flex-col items-center justify-center text-center py-20">
       <img src="/placeholder.svg" alt="Recruitment Platform" className="w-full max-w-4xl rounded-lg shadow-lg mb-8" />
       <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-        Find Your Dream Job, Faster
+        HEADER HEADER HEADER
       </h1>
       <p className="max-w-[700px] text-muted-foreground md:text-xl mt-4">
-        Our platform connects you with top companies actively looking for talent. Stop wasting time sending out resumes into the void.
+        SUBHEADER SUBHEADER
       </p>
       <div className="mt-8">
-        <Button onClick={handleScrollToPricing}>Get Started</Button>
+        <Button onClick={handleScrollToPricing}>Start Your Journey</Button>
       </div>
     </section>
   );
