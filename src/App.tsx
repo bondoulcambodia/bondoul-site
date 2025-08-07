@@ -9,7 +9,7 @@ import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
 import { initGA } from "./hooks/useAnalytics";
-import Recruiter from "./pages/recruiter";
+import Recruiter from "./pages/Recruiter";
 
 const queryClient = new QueryClient();
 
