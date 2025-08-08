@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import { usePageTracking } from "@/hooks/usePageTracking";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
 import { ArrowRight } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   usePageTracking();
@@ -15,7 +16,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main>
         {/* Hero Section */}
@@ -25,10 +26,10 @@ const Index = () => {
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="container relative mx-auto text-center">
-            <h1 className="text-4xl font-bold md:text-6xl">
+            <h1 className="text-4xl font-bold text-white md:text-6xl">
               Find Your Dream Job or Perfect Candidate
             </h1>
-            <p className="mt-4 text-lg md:text-xl">
+            <p className="mt-4 text-lg text-white md:text-xl">
               We connect talent with opportunity. Explore our services for job
               seekers and recruiters.
             </p>
@@ -38,16 +39,16 @@ const Index = () => {
         {/* Services Section */}
         <section className="py-20">
           <div className="container mx-auto">
-            <h2 className="mb-12 text-center text-3xl font-bold text-black">
+            <h2 className="mb-12 text-center text-3xl font-bold">
               Our Services
             </h2>
             <div className="grid gap-8 md:grid-cols-3">
               {/* CV Builder */}
-              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
-                <h3 className="mb-4 text-2xl font-bold text-black">
+              <div className="rounded-lg border bg-card p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold">
                   CV Builder
                 </h3>
-                <p className="mb-6 text-gray-600">
+                <p className="mb-6 text-muted-foreground">
                   Create a professional CV in minutes with our easy-to-use
                   builder.
                 </p>
@@ -64,11 +65,11 @@ const Index = () => {
               </div>
 
               {/* Job Seeker */}
-              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
-                <h3 className="mb-4 text-2xl font-bold text-black">
+              <div className="rounded-lg border bg-card p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold">
                   For Job Seekers
                 </h3>
-                <p className="mb-6 text-gray-600">
+                <p className="mb-6 text-muted-foreground">
                   Find the right job for you and get career advice from our
                   experts.
                 </p>
@@ -85,11 +86,11 @@ const Index = () => {
               </div>
 
               {/* Recruiter */}
-              <div className="rounded-lg bg-slate-50 p-8 text-center shadow-lg">
-                <h3 className="mb-4 text-2xl font-bold text-black">
+              <div className="rounded-lg border bg-card p-8 text-center shadow-lg">
+                <h3 className="mb-4 text-2xl font-bold">
                   For Recruiters
                 </h3>
-                <p className="mb-6 text-gray-600">
+                <p className="mb-6 text-muted-foreground">
                   Post job openings and find the best candidates for your
                   company.
                 </p>
@@ -108,6 +109,7 @@ const Index = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -1,12 +1,12 @@
 const SubscriptionTestimonials = () => {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-800">
+    <section className="py-20 bg-background">
       <div className="container rounded-lg">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Real Success Stories from Our Community
           </h2>
-          <p className="text-muted-foreground mt-2">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Hear from students and young professional like YOU.
           </p>
         </div>

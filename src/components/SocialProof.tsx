@@ -31,7 +31,7 @@ const SocialProof = () => {
   ];
 
   return (
-    <section className="px-6 py-20 bg-gray-100 dark:bg-gray-800 rounded-lg">
+    <section className="px-6 py-20 rounded-lg bg-gradient-hero">
       <div className="max-w-6xl mx-auto">
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">

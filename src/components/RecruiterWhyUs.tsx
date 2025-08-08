@@ -49,8 +49,8 @@ const RecruiterWhyUs = () => {
           </div>
 
           {/* Right Column: CEO Quote */}
-          <div className="bg-gradient-to-br from-primary/10 to-background p-8 rounded-xl shadow-elegant">
-            <blockquote className="text-xl italic text-foreground relative">
+          <div className="bg-gradient-hero p-8 rounded-xl shadow-elegant">
+            <blockquote className="text-lg text-foreground relative">
               <p className="mb-4">
                 “We’ve spent 2+ years building trust with Cambodian youth so if
                 you want motivated students and fresh grads, this is where they
