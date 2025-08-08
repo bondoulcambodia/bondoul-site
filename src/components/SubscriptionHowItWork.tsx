@@ -1,6 +1,6 @@
 import { Building2, Megaphone, Blocks } from "lucide-react";
 
-const RecruiterHowItWorks = () => {
+const SubscriptionHowItWork = () => {
   return (
     <section id="how-it-works" className="container pb-20 pt-10">
       <div className="text-center mb-12">
@@ -50,4 +50,4 @@ const RecruiterHowItWorks = () => {
   );
 };
 
-export default RecruiterHowItWorks;
+export default SubscriptionHowItWork;

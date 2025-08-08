@@ -1,9 +1,9 @@
-import { CheckCircle, Target, Zap, TrendingUp } from "lucide-react";
+import { CheckCircle, Target, Zap, Settings } from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: TrendingUp,
+      icon: Settings,
       title: "ATS-Friendly",
       description:
         "Our CVs are built to pass Applicant Tracking Systems. Your application gets seen, not filtered out.",

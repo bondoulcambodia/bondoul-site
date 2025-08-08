@@ -49,8 +49,7 @@ const RecruiterClient = () => {
             What Our Clients Say
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're proud to have helped some of the world's most innovative
-            companies build their teams.
+            Hear from those who’ve found success with Bondoul.
           </p>
         </div>
 
@@ -61,23 +60,17 @@ const RecruiterClient = () => {
                 key={index}
                 className="md:basis-1/2 lg:basis-1/3 pl-4"
               >
-                <div className="bg-background/80 backdrop-blur-sm rounded-xl p-6 border border-border/50 h-full">
+                <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-border/50 h-full">
                   <blockquote className="text-muted-foreground relative flex flex-col h-full">
                     <p className="mb-4 flex-grow">{testimonial.quote}</p>
-                    <footer className="not-italic mt-auto">
-                      <div className="flex items-center mb-1">
-                        <User className="h-4 w-4 mr-2 text-primary" />
-                        <p className="font-semibold text-sm text-primary">
-                          {testimonial.name}
-                        </p>
-                      </div>
-                      <div className="flex items-center">
-                        <Building className="h-4 w-4 mr-2 text-primary" />
-                        <p className="font-semibold text-sm text-primary">
-                          {testimonial.company}
-                        </p>
-                      </div>
-                    </footer>
+                    <div>
+                      <p className="font-bold text-foreground">
+                        {testimonial.name}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.company}
+                      </p>
+                    </div>
                   </blockquote>
                 </div>
               </CarouselItem>

@@ -1,7 +1,7 @@
 import { usePageTracking } from "@/hooks/usePageTracking";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
 import RecruiterPartner from "@/components/RecruiterPartner";
-import RecruiterClient from "@/components/RecruiterClient";
+import RecruiterClient from "@/components/RecruiterTestimonial";
 import RecruiterWhyUs from "@/components/RecruiterWhyUs";
 import RecruiterFeatures from "@/components/RecruiterFeatures";
 import RecruiterHowItWorks from "@/components/RecruiterHowItWorks";

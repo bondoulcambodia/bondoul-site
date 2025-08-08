@@ -18,7 +18,7 @@ const RecruiterFeatures = () => {
       icon: DatabaseZap,
       title: "Recruitment Database",
       description:
-        "Build and manage your own pool of candidates for quick, future hiring, whether by posting jobs or searching directly.",
+        "Build and manage your candidate pool for quick or future hiring. Post jobs and use smart search to find and invite top talent.",
     },
     {
       icon: CalendarDays,

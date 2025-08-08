@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { usePageTracking } from "@/hooks/usePageTracking";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
+import SubscriptionHowItWork from "@/components/SubscriptionHowItWork";
 
 const Subscription = () => {
   usePageTracking();
@@ -19,8 +20,10 @@ const Subscription = () => {
       <div className="my-12">
         <SocialProof />
       </div>
-      <SubscriptionPricing />
+
       <SubscriptionTestimonials />
+      <SubscriptionPricing />
+      <SubscriptionHowItWork />
       <Footer />
     </div>
   );
