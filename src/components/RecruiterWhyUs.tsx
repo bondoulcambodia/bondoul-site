@@ -6,10 +6,13 @@ import image5 from "@/assets/recruiter-hero-bg.png";
 
 const RecruiterWhyUs = () => {
   const stats = [
-    { number: "52%", label: "Higher response rate with tailored CVs" },
-    { number: "2.3x", label: "More interview invitations" },
-    { number: "45%", label: "Faster job placement" },
-    { number: "2.9k+", label: "Job seekers already interested" },
+    { number: "65", label: "Internship placed manually before" },
+    { number: "25", label: "SMEs onboarded" },
+    {
+      number: "2y+",
+      label: "of HR experience in youth career development",
+    },
+    { number: "5k+", label: "university students in our network" },
   ];
 
   const images = [image1, image2, image3, image4, image5];
@@ -23,9 +26,8 @@ const RecruiterWhyUs = () => {
             Why Choose Bondoul?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're more than just a platform; we're a partner in your success. We
-            are dedicated to connecting you with the best talent and providing
-            the tools you need to build a world-class team.
+            We’re here to help you succeed. Our goal is to connect you with
+            great talent and give you the tools to build a strong team.
           </p>
         </div>
 
@@ -50,15 +52,13 @@ const RecruiterWhyUs = () => {
           <div className="bg-gradient-to-br from-primary/10 to-background p-8 rounded-xl shadow-elegant">
             <blockquote className="text-xl italic text-foreground relative">
               <p className="mb-4">
-                "In today's competitive market, finding the right talent is
-                paramount. We built Bondoul to bridge the gap between
-                exceptional professionals and the innovative companies that need
-                them. Our commitment is to make that connection seamless,
-                efficient, and truly effective."
+                “We’ve spent 2+ years building trust with Cambodian youth so if
+                you want motivated students and fresh grads, this is where they
+                look first.”
               </p>
               <footer className="text-right not-italic">
                 <p className="font-bold text-primary">
-                  - John Doe, CEO of Bondoul
+                  - Sokhethida, CEO of Bondoul
                 </p>
               </footer>
             </blockquote>
@@ -73,7 +73,7 @@ const RecruiterWhyUs = () => {
         <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-50 to-transparent z-10"></div>
 
         {/* Scrolling container */}
-        <div className="flex whitespace-nowrap animate-scroll">
+        <div className="flex whitespace-nowrap md:animate-scroll animate-scroll-fast">
           {/* First set of images */}
           {images.map((img, index) => (
             <div

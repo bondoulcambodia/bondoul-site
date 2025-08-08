@@ -106,6 +106,7 @@ export default {
         "fade-in": "fadeIn 0.6s ease-out",
         "slide-up": "slideUp 0.6s ease-out",
         scroll: "scroll 15s linear infinite",
+        "scroll-fast": "scroll 5s linear infinite",
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",

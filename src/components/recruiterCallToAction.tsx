@@ -23,7 +23,7 @@ const RecruiterCallToAction = () => {
 
   const handleRecruiterGetStarted = () => {
     setShowModal(true);
-    trackEvent("recruiter_get_started");
+    trackEvent("recruiter_get_started_CTA");
   };
 
   return (
@@ -31,10 +31,11 @@ const RecruiterCallToAction = () => {
       <section className="py-20 px-6 bg-gradient-primary text-white">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Find The Perfect Candidate?
+            Start Hiring Smarter Today
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join hundreds of recruiters who are finding the best talent with Bondoul.
+            Join Bondoul and connect with the young talent ready to make a
+            difference in your team.
           </p>
 
           <div className="max-w-md mx-auto mb-8">
@@ -76,11 +77,12 @@ const RecruiterCallToAction = () => {
 
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold mb-2">
-                You're on the VIP list 💌
+                We’re almost ready for you
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Our Recruiter platform is almost ready — and you'll be among the first
-                to test it out. It's sleek, stress-free, and built just for recruiters like you.
+                Our full hiring platform is on the way, bringing you all the
+                tools you need to find, connect with, and hire young talent with
+                ease. We’re almost ready, and it’ll be in your hands very soon.
               </p>
             </div>
 

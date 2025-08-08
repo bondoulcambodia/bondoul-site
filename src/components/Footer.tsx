@@ -13,9 +13,10 @@ const Footer = () => {
           <div className="col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">Bondoul</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              We bring together helpful tools and a variety of opportunities —
-              jobs, internships, scholarships, events, and more. Bondoul is the
-              friend you need for your career journey.
+              We bring people and opportunities together, from jobs and
+              internships to talent connections, events, and more. Whether you
+              are growing your career or building your team, Bondoul is here to
+              support your journey.
             </p>
             <p className="text-sm text-muted-foreground">
               We are currently in MVP development stage.
