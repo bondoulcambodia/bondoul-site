@@ -3,14 +3,19 @@ import ReactGA from "react-ga4";
 const TRACKING_ID = "G-1V949EEKK4"; // Replace with your Google Analytics tracking ID
 
 export const initGA = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const isDebugMode = urlParams.get("ga_debug") === "true";
+
+  if (isDebugMode) {
+    console.log("GA DebugView has been enabled via URL parameter.");
+  }
+
   ReactGA.initialize(TRACKING_ID, {
     gaOptions: {
       cookieDomain: "none",
-      // cookieDomain: "auto",
-      // cookieFlags: "SameSite=None;Secure",
     },
     gtagOptions: {
-      debug_mode: true,
+      debug_mode: isDebugMode,
     },
   });
 };
