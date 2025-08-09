@@ -5,7 +5,8 @@ const TRACKING_ID = "G-1V949EEKK4"; // Replace with your Google Analytics tracki
 export const initGA = () => {
   ReactGA.initialize(TRACKING_ID, {
     gaOptions: {
-      cookieFlags: "SameSite=None;Secure",
+      cookieDomain: "auto",
+      // cookieFlags: "SameSite=None;Secure",
     },
   });
 };
