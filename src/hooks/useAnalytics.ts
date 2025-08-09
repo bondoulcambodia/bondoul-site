@@ -8,6 +8,7 @@ export const initGA = () => {
 };
 
 export const trackPageView = (path: string) => {
+  console.log(`Tracking page view for: ${path}`);
   ReactGA.send({ hitType: "pageview", page: path });
 };
 
