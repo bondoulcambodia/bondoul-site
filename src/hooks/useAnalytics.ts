@@ -9,6 +9,9 @@ export const initGA = () => {
       // cookieDomain: "auto",
       // cookieFlags: "SameSite=None;Secure",
     },
+    gtagOptions: {
+      debug_mode: true,
+    },
   });
 };
 
