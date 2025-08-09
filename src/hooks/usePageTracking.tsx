@@ -6,6 +6,7 @@ export const usePageTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
-    trackPageView(location.pathname + location.search);
+    // With HashRouter, the page path is in the hash. We send the full hash to GA.
+    trackPageView(location.pathname + location.search + location.hash);
   }, [location]);
 };
