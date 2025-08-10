@@ -8,7 +8,7 @@ import NotFound from "./pages/NotFound";
 import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
 import { useEffect } from "react";
-import { initGA, trackPageView } from "./hooks/useAnalytics";
+import { initGA } from "./hooks/useAnalytics";
 import { PageTracker } from "./hooks/usePageTracking";
 import Recruiter from "./pages/Recruiter";
 
@@ -17,9 +17,6 @@ const queryClient = new QueryClient();
 const App = () => {
   useEffect(() => {
     initGA();
-    // On initial load, track the pageview directly from the hash
-    const initialPath = window.location.hash.substring(1) || "/";
-    trackPageView(initialPath);
   }, []);
 
   return (
