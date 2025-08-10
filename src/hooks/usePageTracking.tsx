@@ -1,41 +1,38 @@
 import { useEffect, useRef } from "react";
-import { trackPageView } from "./useAnalytics";
+import { initGA, trackPageView } from "./useAnalytics";
 
 export const PageTracker = ({ children }: { children: React.ReactNode }) => {
   const lastTrackedPath = useRef<string | null>(null);
 
   useEffect(() => {
+    // This effect runs only once on mount, ensuring a clean setup.
+    
+    // 1. Initialize Google Analytics
+    initGA();
+
     const trackCurrentPage = () => {
-      // window.location.hash is the single source of truth for HashRouter.
+      // 2. Determine the correct path from the URL hash.
       const hash = window.location.hash;
-      let currentPath: string;
+      let currentPath = hash.startsWith("#/") ? hash.substring(1) : "/";
 
-      if (hash.startsWith("#/")) {
-        // This handles all paths like "#/jobseeker"
-        currentPath = hash.substring(1); // -> "/jobseeker"
-      } else {
-        // This handles the root case where the hash is "" or just "#"
-        currentPath = "/";
-      }
-
-      // Only send a pageview if the path has actually changed.
+      // 3. Only track if the path is new. This prevents duplicates.
       if (currentPath !== lastTrackedPath.current) {
         trackPageView(currentPath);
         lastTrackedPath.current = currentPath;
       }
     };
 
-    // Add listener for subsequent navigation
-    window.addEventListener('hashchange', trackCurrentPage);
-
-    // Track the initial page load
+    // 4. Track the initial page view after initialization.
     trackCurrentPage();
 
-    // Cleanup function to remove the listener
+    // 5. Listen for all subsequent route changes.
+    window.addEventListener('hashchange', trackCurrentPage);
+
+    // 6. Cleanup the listener when the component unmounts.
     return () => {
       window.removeEventListener('hashchange', trackCurrentPage);
     };
-  }, []); // Empty dependency array means this effect runs only once on mount.
+  }, []); // The empty dependency array is crucial.
 
   return <>{children}</>;
 };

@@ -7,18 +7,12 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CVbuilder from "./pages/CVbuilder";
 import Subscription from "./pages/Subscription";
-import { useEffect } from "react";
-import { initGA } from "./hooks/useAnalytics";
 import { PageTracker } from "./hooks/usePageTracking";
 import Recruiter from "./pages/Recruiter";
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  useEffect(() => {
-    initGA();
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
