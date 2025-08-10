@@ -21,7 +21,11 @@ export const initGA = () => {
 };
 
 export const trackPageView = (path: string) => {
-  ReactGA.send({ hitType: "pageview", page: path });
+  ReactGA.send({
+    hitType: "pageview",
+    page_path: path,
+    page_location: window.location.href,
+  });
 };
 
 export const trackEvent = (action: string, params?: Record<string, any>) => {

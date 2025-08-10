@@ -6,8 +6,9 @@ export const PageTracker = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
 
   useEffect(() => {
-    // With HashRouter, the page path is in the hash. We send the full hash to GA.
-    trackPageView(location.pathname + location.search + location.hash);
+    // `location.pathname` from `useLocation` correctly reflects the path after the # in HashRouter.
+    // We also pass the search params if they exist.
+    trackPageView(location.pathname + location.search);
   }, [location]);
 
   return <>{children}</>;
