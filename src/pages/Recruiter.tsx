@@ -1,4 +1,3 @@
-import { usePageTracking } from "@/hooks/usePageTracking";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
 import RecruiterPartner from "@/components/RecruiterPartner";
 import RecruiterClient from "@/components/RecruiterTestimonial";
@@ -11,7 +10,6 @@ import RecruiterCallToAction from "@/components/recruiterCallToAction";
 import Footer from "@/components/Footer";
 
 const Recruiter = () => {
-  usePageTracking();
   useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
@@ -19,10 +17,11 @@ const Recruiter = () => {
       <RecruiterHero />
 
       <RecruiterFeatures />
+      <RecruiterHowItWorks />
       <RecruiterWhyUs />
       <RecruiterPartner />
       <RecruiterClient />
-      <RecruiterHowItWorks />
+
       <RecruiterCallToAction />
       <Footer />
     </div>

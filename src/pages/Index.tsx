@@ -2,12 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { trackEvent } from "@/hooks/useAnalytics";
 import Navbar from "@/components/Navbar";
-import { usePageTracking } from "@/hooks/usePageTracking";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
 import { ArrowRight } from "lucide-react";
 
 const Index = () => {
-  usePageTracking();
   useScrollTracking();
 
   const handleServiceClick = (service: string) => {

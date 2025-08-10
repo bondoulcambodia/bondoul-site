@@ -36,7 +36,7 @@ const SubscriptionPricing = () => {
 
   return (
     <>
-      <section id="pricing" className="max-w-5xl mx-auto py-10 px-10">
+      <section id="pricing" className="max-w-5xl mx-auto pb-20 pt-10 px-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Choose Your Plan

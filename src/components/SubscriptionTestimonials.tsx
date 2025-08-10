@@ -38,7 +38,7 @@ const SubscriptionTestimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="pt-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
