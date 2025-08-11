@@ -14,11 +14,11 @@ const RecruiterWhyUs = () => {
   return (
     <section className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Why Choose Bondoul?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             We’re here to help you succeed. Our goal is to connect you with
             great talent and give you the tools to build a strong team.
           </p>
@@ -33,7 +33,7 @@ const RecruiterWhyUs = () => {
                 className="text-center animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                <div className="text-3xl md:text-5xl font-bold text-primary mb-2">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>

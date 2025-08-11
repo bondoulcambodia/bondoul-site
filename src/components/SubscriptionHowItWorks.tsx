@@ -1,11 +1,11 @@
 const SubscriptionHowItWorks = () => {
   return (
     <section className="container py-20">
-      <div className="text-center mb-16">
+      <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
           How It Works
         </h2>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
           A simple process to connect with your future.
         </p>
       </div>
@@ -27,7 +27,9 @@ const SubscriptionHowItWorks = () => {
               ></path>
             </svg>
           </div>
-          <h3 className="text-xl font-bold mb-2">1. Create Your Profile</h3>
+          <h3 className="text-lg md:text-xl font-bold mb-2">
+            1. Create Your Profile
+          </h3>
           <p className="text-muted-foreground">
             Build a comprehensive profile that showcases your skills and
             experience to potential employers.
@@ -50,7 +52,7 @@ const SubscriptionHowItWorks = () => {
               ></path>
             </svg>
           </div>
-          <h3 className="text-xl font-bold mb-2">2. Get Matched</h3>
+          <h3 className="text-lg md:text-xl font-bold mb-2">2. Get Matched</h3>
           <p className="text-muted-foreground">
             Our smart algorithm connects you with job opportunities that align
             with your career goals.
@@ -73,7 +75,9 @@ const SubscriptionHowItWorks = () => {
               ></path>
             </svg>
           </div>
-          <h3 className="text-xl font-bold mb-2">3. Start Interviewing</h3>
+          <h3 className="text-lg md:text-xl font-bold mb-2">
+            3. Start Interviewing
+          </h3>
           <p className="text-muted-foreground">
             Receive interview requests directly from companies and land your
             dream job.

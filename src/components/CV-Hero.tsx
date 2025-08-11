@@ -48,13 +48,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
             Let's Build CVs
             <br />
             <span className="text-foreground">That Work as Hard as You Do</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Stop wasting time on clunky templates. Bondoul’s CV Builder lets you
             build one strong CV and tweak it for each job. Fast. Simple. No
             stress.
@@ -116,10 +116,10 @@ const Hero = () => {
             </button>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">
+              <h3 className="text-xl md:text-2xl font-bold mb-2">
                 You're on the VIP list 💌
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Our CV Builder is almost ready. You’ll be one of the first to
                 try it. It’s clean, easy to use, and made for job seekers like
                 you.
@@ -132,13 +132,13 @@ const Hero = () => {
                 placeholder="Enter your email to get notified first!"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full placeholder:text-sm md:placeholder:text-base"
                 required
               />
               <Button
                 type="submit"
                 variant="default"
-                className="w-full text-lg py-3"
+                className="w-full text-sm md:text-lg py-3"
               >
                 🚀 Notify Me
               </Button>

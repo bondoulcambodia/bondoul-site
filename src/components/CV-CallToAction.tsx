@@ -30,10 +30,10 @@ const CallToAction = () => {
     <>
       <section className="py-20 px-6 bg-gradient-primary text-white">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Ready to Land Your Dream Job?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-lg md:text-xl mb-8 opacity-90">
             Join thousands of job seekers who are revolutionizing their
             application strategy
           </p>
@@ -76,10 +76,10 @@ const CallToAction = () => {
             </button>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">
+              <h3 className="text-xl md:text-2xl font-bold mb-2">
                 You're on the VIP list 💌
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 Our CV Builder is almost ready. You’ll be one of the first to
                 try it. It’s clean, easy to use, and made for job seekers like
                 you.
@@ -92,13 +92,13 @@ const CallToAction = () => {
                 placeholder="Enter your email to get notified first!"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full placeholder:text-sm md:placeholder:text-base"
                 required
               />
               <Button
                 type="submit"
                 variant="default"
-                className="w-full text-lg py-3"
+                className="w-full text-sm md:text-lg py-3"
               >
                 🚀 Notify Me
               </Button>

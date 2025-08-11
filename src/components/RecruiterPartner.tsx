@@ -51,10 +51,10 @@ const RecruiterPartner = () => {
     <section className="py-20 px-6 bg-gradient-hero">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Our Partners
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             We’re proud to work with trusted partners and clients who share our
             vision for connecting young talent with great opportunities.
           </p>

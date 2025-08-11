@@ -21,11 +21,11 @@ const RecruiterClient = () => {
   return (
     <section className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Hear from those who’ve found success with Bondoul.
           </p>
         </div>
@@ -38,7 +38,7 @@ const RecruiterClient = () => {
                 className="md:basis-1/2 lg:basis-1/3 pl-4"
               >
                 <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 border border-border/50 h-full flex flex-col">
-                  <blockquote className="text-muted-foreground relative flex flex-col h-full">
+                  <blockquote className="text-muted-foreground relative flex flex-col h-full text-base md:text-lg">
                     <p className="mb-4 flex-grow">"{testimonial.quote}"</p>
                     <footer className="not-italic mt-auto">
                       <div className="flex items-center">

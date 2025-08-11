@@ -4,8 +4,8 @@ const RecruiterHowItWorks = () => {
   return (
     <section id="how-it-works" className="container pb-20 pt-10">
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold">How It Works</h2>
-        <p className="text-muted-foreground mt-2">
+        <h2 className="text-3xl md:text-5xl font-bold">How It Works</h2>
+        <p className="text-lg md:text-xl text-muted-foreground mt-2">
           Get started in just 3 simple steps.
         </p>
       </div>
@@ -14,7 +14,7 @@ const RecruiterHowItWorks = () => {
           <div className="flex items-center justify-center w-16 h-16 mb-4 bg-primary rounded-full text-primary-foreground font-bold text-2xl">
             <Building2 size={30} />
           </div>
-          <h3 className="text-xl font-bold mb-2">
+          <h3 className="text-lg md:text-xl font-bold mb-2">
             Set Up Your Company Profile
           </h3>
           <p className="text-muted-foreground">
@@ -26,7 +26,7 @@ const RecruiterHowItWorks = () => {
           <div className="flex items-center justify-center w-16 h-16 mb-4 bg-primary rounded-full text-primary-foreground font-bold text-2xl">
             <Megaphone size={30} />
           </div>
-          <h3 className="text-xl font-bold mb-2">Share Your Opportunities</h3>
+          <h3 className="text-lg md:text-xl font-bold mb-2">Share Your Opportunities</h3>
           <p className="text-muted-foreground">
             Post jobs, internships, or any other opportunities you want to
             offer. Let great candidates find you and apply with ease.
@@ -36,7 +36,7 @@ const RecruiterHowItWorks = () => {
           <div className="flex items-center justify-center w-16 h-16 mb-4 bg-primary rounded-full text-primary-foreground font-bold text-2xl">
             <Blocks size={30} />
           </div>
-          <h3 className="text-xl font-bold mb-2">
+          <h3 className="text-lg md:text-xl font-bold mb-2">
             Build and Manage Your Talent Pool
           </h3>
           <p className="text-muted-foreground">
