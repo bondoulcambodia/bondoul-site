@@ -1,8 +1,8 @@
 const SubscriptionHowItWorks = () => {
   return (
-    <section className="container pb-20 pt-10">
+    <section className="container py-20">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
           How It Works
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

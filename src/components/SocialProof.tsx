@@ -41,7 +41,7 @@ const SocialProof = () => {
               className="text-center animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-2">
                 {stat.number}
               </div>
               <div className="text-muted-foreground">{stat.label}</div>

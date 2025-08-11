@@ -36,16 +36,16 @@ const SubscriptionPricing = () => {
 
   return (
     <>
-      <section id="pricing" className="max-w-5xl mx-auto pb-20 pt-10 px-10">
+      <section id="pricing" className="max-w-5xl mx-auto pb-20 pt-10 px-6 sm:px-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
             Choose Your Plan
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Start free and upgrade as you accelerate your career journey
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
           {/* Explorer Plan */}
           <div className="flex flex-col p-6 bg-card rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold text-center mb-4">Explorer</h3>

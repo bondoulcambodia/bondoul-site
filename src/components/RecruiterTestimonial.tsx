@@ -6,10 +6,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Ermine from "@/assets/people/Ermine.jpg";
-import Vuttey from "@/assets/people/Vuttey.jpg";
-import Cheetah from "@/assets/people/Cheetah.jpg";
-import Chansovatey from "@/assets/people/chansovatey.jpg";
-import person5 from "@/assets/people/5.jpg";
 
 const RecruiterClient = () => {
   const testimonials = [
@@ -19,34 +15,6 @@ const RecruiterClient = () => {
       name: "Ermine De Rose Norodom",
       company: "Founder of Shanty Town Spirit",
       img: Ermine,
-    },
-    {
-      quote:
-        "The quality of candidates on Bondoul is unmatched. We've filled several key roles with candidates we found on the platform, and they've all exceeded our expectations.",
-      name: "Vuttey",
-      company: "Tech Solutions",
-      img: Vuttey,
-    },
-    {
-      quote:
-        "I've used a lot of recruitment platforms, and Bondoul is by far the best. It's easy to use, the candidates are top-notch, and the customer service is excellent.",
-      name: "Cheetah",
-      company: "Creative Minds",
-      img: Cheetah,
-    },
-    {
-      quote:
-        "The efficiency and quality of candidates we found through Bondoul have significantly reduced our hiring time. A must-have tool for any serious recruiter.",
-      name: "Chansovatey",
-      company: "NextGen Solutions",
-      img: Chansovatey,
-    },
-    {
-      quote:
-        "Bondoul's platform is incredibly intuitive. We were able to onboard our team and start sourcing candidates within a day. The results have been fantastic.",
-      name: "Michael Chen",
-      company: "Future Forward Inc.",
-      img: person5,
     },
   ];
 
