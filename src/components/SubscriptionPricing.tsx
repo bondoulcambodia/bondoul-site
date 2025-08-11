@@ -316,10 +316,10 @@ const SubscriptionPricing = () => {
             </button>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">
+              <h3 className="text-xl md:text-2xl font-bold mb-2">
                 Join our early access members!
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                 You've selected the {selectedPlan.tier} plan. Be among the first
                 to test it out.
               </p>
@@ -331,13 +331,13 @@ const SubscriptionPricing = () => {
                 placeholder="Enter your email to get notified first!"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full placeholder:text-sm md:placeholder:text-base"
                 required
               />
               <Button
                 type="submit"
                 variant="default"
-                className="w-full text-lg py-3"
+                className="w-full text-sm md:text-lg py-3"
               >
                 🚀 Notify Me
               </Button>
