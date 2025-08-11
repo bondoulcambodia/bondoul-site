@@ -13,6 +13,7 @@ export const initGA = () => {
   ReactGA.initialize(TRACKING_ID, {
     gaOptions: {
       cookieDomain: "none",
+      send_page_view: false,
     },
     gtagOptions: {
       debug_mode: isDebugMode,
