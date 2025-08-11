@@ -21,7 +21,7 @@ const ImageScroller = () => {
     image9,
   ];
   return (
-    <div className="pt-16 pb-10 relative overflow-hidden">
+    <div className="my-0 sm:my-20 relative overflow-hidden">
       {/* Gradient masks for fade effect */}
       <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-50 to-transparent z-10"></div>
       <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-50 to-transparent z-10"></div>

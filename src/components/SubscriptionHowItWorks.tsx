@@ -1,6 +1,6 @@
 const SubscriptionHowItWorks = () => {
   return (
-    <section className="container py-20">
+    <section className="container pb-20 pt-10">
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
           How It Works

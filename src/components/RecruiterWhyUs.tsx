@@ -24,7 +24,7 @@ const RecruiterWhyUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center pb-20 sm:pb-0">
           {/* Left Column: Stats */}
           <div className="grid grid-cols-2 gap-8">
             {stats.map((stat, index) => (

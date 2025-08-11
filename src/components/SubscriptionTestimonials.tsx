@@ -5,6 +5,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Cheetah from "@/assets/people/Cheetah.jpg";
+import Chansovaty from "@/assets/people/Chansovatey.jpg";
+import Vuttey from "@/assets/people/Vuttey.jpg";
 
 const SubscriptionTestimonials = () => {
   const testimonials = [
@@ -13,21 +16,21 @@ const SubscriptionTestimonials = () => {
         "This platform is a game-changer. I got three interviews within the first week!",
       name: "Sarah Johnson",
       title: "Software Engineer",
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+      img: Cheetah,
     },
     {
       quote:
         "I was skeptical at first, but the quality of the job matches is incredible.",
       name: "Michael Chen",
       title: "Product Manager",
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026704e",
+      img: Chansovaty,
     },
     {
       quote:
         "The variety of opportunities helped me find the perfect fit for my skills.",
       name: "Jessica Lee",
       title: "UX/UI Designer",
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026704f",
+      img: Vuttey,
     },
     {
       quote: "A must-have tool for any student looking for internships.",
