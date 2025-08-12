@@ -1,4 +1,4 @@
-import { CheckCircle, Target, Zap } from "lucide-react";
+import { CheckCircle, Target, Zap, Handshake } from "lucide-react";
 import SocialProof from "@/components/SocialProof";
 
 const SubscriptionFeatures = () => {
@@ -36,18 +36,28 @@ const SubscriptionFeatures = () => {
         "Progress analytics",
       ],
     },
+    {
+      icon: Handshake,
+      title: "Opportunity Hub",
+      description:
+        "Discover and explore various opportunities tailored to your interests and goals - all in one place.",
+      points: [
+        "Application Status tracking",
+        "Interview scheduling",
+        "Progress analytics",
+      ],
+    },
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Why Bondoul Platform
+            Everything You Need in One Platform
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our platform is designed to help you find the right opportunities
-            and land your dream job.
+            A comprehensive suit of tools to maximize your opportunities search
           </p>
         </div>
 
