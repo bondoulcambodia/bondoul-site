@@ -1,50 +1,39 @@
-import { CheckCircle, Target, Zap, Handshake } from "lucide-react";
+import { CheckCircle, ListFilter, Zap, LayoutDashboard } from "lucide-react";
 import SocialProof from "@/components/SocialProof";
 
 const SubscriptionFeatures = () => {
   const features = [
     {
       icon: Zap,
-      title: "AI-Powered Matching",
+      title: "Smart Matching Just For You",
       description:
-        "Our algorithm learns your preferences and find the right opportunities for you.",
+        "We learn your preferences and helps find opportunities that fit you",
       points: [
-        "Smart compatibility scoring",
-        "Preference recommendations",
-        "Success prediction",
+        "Personalized match scores",
+        "Entry-level job and internship recommendations",
+        "Real success insights",
       ],
     },
     {
-      icon: Target,
-      title: "Smart Search & Filters",
+      icon: ListFilter,
+      title: "Search Made Simple",
       description:
-        "Find exactly what you're looking for with AI-powered search across all opportunity types.",
+        "Find exactly what you want with filters",
       points: [
-        "Salary & timeline filters",
-        "Location-based filters",
-        "Skill & experience matching",
+        "Salary & timeline",
+        "Location-based options",
+        "Skill & experience fit",
       ],
     },
     {
-      icon: CheckCircle,
-      title: "Personalized Dashboard",
+      icon: LayoutDashboard,
+      title: "Your Personal Dashboard",
       description:
-        "Track all your applications, interviews, deadlines, and opportunities in one organized space.",
+        "Keep track of everything in one place. Stay on top of your applications and interviews",
       points: [
-        "Application Status tracking",
+        "Application status updates",
         "Interview scheduling",
-        "Progress analytics",
-      ],
-    },
-    {
-      icon: Handshake,
-      title: "Opportunity Hub",
-      description:
-        "Discover and explore various opportunities tailored to your interests and goals - all in one place.",
-      points: [
-        "Application Status tracking",
-        "Interview scheduling",
-        "Progress analytics",
+        "Progress tracking",
       ],
     },
   ];
@@ -54,11 +43,10 @@ const SubscriptionFeatures = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Why Bondoul Platform
+            Why Bondoul Platform?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our platform is designed to help you find the right opportunities
-            and land your dream job.
+            Our platform is designed to help you find the right opportunities and land your dream internship or entry-level job, all while being part of a community that supports, listens, and grows with you.
           </p>
         </div>
 

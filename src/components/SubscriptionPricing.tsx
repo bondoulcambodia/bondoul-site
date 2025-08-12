@@ -74,7 +74,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Access to all opportunity types</span>
+                <span>Access to Opportunity Hub</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -108,7 +108,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Up to 10 applications per month</span>
+                <span>Apply up to 10 opportunities per month</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -125,24 +125,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Limited access to dashboard</span>
-              </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-6 h-6 text-green-500 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Basic analytics</span>
+                <span>Track your application progress</span>
               </li>
             </ul>
             <Button onClick={() => handleChoosePlan("Explorer", "$1.99")}>
@@ -175,7 +158,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Everything in Explorer</span>
+                <span>Everything in Explorer plan</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -209,7 +192,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>AI-Powered recommendations</span>
+                <span>Personalized job recommendations</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -243,58 +226,7 @@ const SubscriptionPricing = () => {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <span>Early access to new opportunities</span>
-              </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-6 h-6 text-green-500 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Directly connect with recruiters</span>
-              </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-6 h-6 text-green-500 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Profile optimization suggestions</span>
-              </li>
-              <li className="flex items-center">
-                <svg
-                  className="w-6 h-6 text-green-500 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Additional interview preparation resources</span>
+                <span>Early access to new job listings</span>
               </li>
             </ul>
             <Button onClick={() => handleChoosePlan("Professional", "$2.99")}>

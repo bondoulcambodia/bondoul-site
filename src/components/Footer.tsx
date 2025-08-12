@@ -37,7 +37,7 @@ const Footer = () => {
                 <IconBrandTelegram />
               </a>
               <a
-                href="https://www.facebook.com/share/1FTgL5zf8P/?mibextid=wwXIfr"
+                href="https://www.linkedin.com/in/bondoul-cambodia-39190226a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

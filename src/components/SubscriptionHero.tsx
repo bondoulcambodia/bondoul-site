@@ -12,11 +12,10 @@ const SubscriptionHero = () => {
     <section className="relative min-h-[95vh] sm:min-h-screen w-full flex flex-col lg:grid grid-cols-1 lg:grid-cols-2 items-center justify-center bg-gradient-hero gap-8 lg:gap-0 pt-20 p-6 sm:p-10 lg:p-16">
       <div className="flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
-          A Partner For Your <span className="text-primary">Career</span>
+          A Friend For Your <span className="text-primary">Career</span>
         </h1>
         <p className="max-w-[700px] text-muted-foreground text-lg md:text-xl mt-4">
-          Our platform connects you with top companies actively looking for
-          talent. Stop wasting time sending out resumes into the void.
+          Our platform connects you with internship and entry-level jobs where company want to see you. Bondoul is here to support you every step of the way until you land your dream job.
         </p>
         <div className="mt-6 w-full sm:w-auto">
           <Button

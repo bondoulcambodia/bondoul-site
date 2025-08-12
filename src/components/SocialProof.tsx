@@ -33,16 +33,7 @@ const SocialProof = () => {
   return (
     <section className="px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Why Choose Bondoul?
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're more than just a platform; we're a partner in your success. We
-            are dedicated to connecting you with the best talent and providing
-            the tools you need to build a world-class team.
-          </p>
-        </div>
+
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left Column: Stats */}
