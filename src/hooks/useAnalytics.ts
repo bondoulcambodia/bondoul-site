@@ -1,13 +1,32 @@
 import ReactGA from "react-ga4";
 
-const TRACKING_ID = "G-QLEEZETYK4"; // Replace with your Google Analytics tracking ID
+const TRACKING_ID = "G-1V949EEKK4"; // Replace with your Google Analytics tracking ID
 
 export const initGA = () => {
-  ReactGA.initialize(TRACKING_ID);
+  const urlParams = new URLSearchParams(window.location.search);
+  const isDebugMode = urlParams.get("ga_debug") === "true";
+
+  if (isDebugMode) {
+    console.log("GA DebugView has been enabled via URL parameter.");
+  }
+
+  ReactGA.initialize(TRACKING_ID, {
+    gaOptions: {
+      cookieDomain: "none",
+      send_page_view: false,
+    },
+    gtagOptions: {
+      debug_mode: isDebugMode,
+    },
+  });
 };
 
 export const trackPageView = (path: string) => {
-  ReactGA.send({ hitType: "pageview", page: path });
+  ReactGA.send({
+    hitType: "pageview",
+    page_path: path,
+    page_location: window.location.href,
+  });
 };
 
 export const trackEvent = (action: string, params?: Record<string, any>) => {

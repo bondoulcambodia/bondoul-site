@@ -1,9 +1,9 @@
-import { CheckCircle, Target, Zap, TrendingUp } from "lucide-react";
+import { CheckCircle, Target, Zap, Settings } from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
     {
-      icon: TrendingUp,
+      icon: Settings,
       title: "ATS-Friendly",
       description:
         "Our CVs are built to pass Applicant Tracking Systems. Your application gets seen, not filtered out.",
@@ -31,11 +31,11 @@ const Benefits = () => {
   return (
     <section className="py-20 px-6 ">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             Why Bondoul's CV Builder
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Research shows tailored applications get more responses than generic
             ones. Personalizing your CV and answers makes a real difference.
           </p>
@@ -51,7 +51,7 @@ const Benefits = () => {
               <div className="mb-4">
                 <benefit.icon className="h-12 w-12 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 text-foreground">
                 {benefit.title}
               </h3>
               <p className="text-muted-foreground">{benefit.description}</p>

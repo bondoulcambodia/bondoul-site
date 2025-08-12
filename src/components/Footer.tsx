@@ -12,10 +12,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <h3 className="text-2xl font-bold text-primary mb-4">Bondoul</h3>
-            <p className="text-muted-foreground mb-4 max-w-md">
-              We bring together helpful tools and a variety of opportunities —
-              jobs, internships, scholarships, events, and more. Bondoul is the
-              friend you need for your career journey.
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-md">
+              We bring people and opportunities together, from jobs and
+              internships to talent connections, events, and more. Whether you
+              are growing your career or building your team, Bondoul is here to
+              support your journey.
             </p>
             <p className="text-sm text-muted-foreground">
               We are currently in MVP development stage.
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
 
           <div className="">
-            <h4 className="font-semibold text-foreground mb-4">
+            <h4 className="font-semibold text-foreground mb-4 text-sm sm:text-base">
               Follow/Contact Us
             </h4>
             <div className="flex space-x-4">
@@ -63,7 +64,9 @@ const Footer = () => {
           </div>
 
           <div className="overflow-clip">
-            <h4 className="font-semibold text-foreground mb-4">Location</h4>
+            <h4 className="font-semibold text-foreground mb-4 text-sm sm:text-base">
+              Location
+            </h4>
             <ul className="space-y-2 text-muted-foreground">
               {/* <li>
                 <a
@@ -74,13 +77,13 @@ const Footer = () => {
                 </a>
               </li> */}
               <li>
-                <p>Phnom Penh, Cambodia</p>
+                <p className="text-sm sm:text-base">Phnom Penh, Cambodia</p>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
+        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm sm:text-base">
           <p>&copy; 2025 Bondoul. All rights reserved.</p>
         </div>
       </div>

@@ -18,10 +18,13 @@ const SubscriptionPricing = () => {
   const handleEarlyAccess = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      trackEvent(`jobseeker_subscription_click_${selectedPlan.tier.toLowerCase()}`, {
-        price: selectedPlan.price,
-        email,
-      });
+      trackEvent(
+        `jobseeker_subscription_click_${selectedPlan.tier.toLowerCase()}`,
+        {
+          price: selectedPlan.price,
+          email,
+        }
+      );
       toast({
         title: "Thanks for your interest!",
         description: "You're on the list! We'll notify you upon launch.",
@@ -33,19 +36,26 @@ const SubscriptionPricing = () => {
 
   return (
     <>
-      <section id="pricing" className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold">Choose Your Plan</h2>
-          <p className="text-muted-foreground mt-2">
+      <section
+        id="pricing"
+        className="max-w-5xl mx-auto pb-20 pt-10 px-6 sm:px-10"
+      >
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
+            Choose Your Plan
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Start free and upgrade as you accelerate your career journey
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
           {/* Explorer Plan */}
           <div className="flex flex-col p-6 bg-card rounded-lg shadow-lg">
-            <h3 className="text-2xl font-bold text-center mb-4">Explorer</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-4">
+              Explorer
+            </h3>
             <div className="text-center mb-6">
-              <span className="text-5xl font-bold">$1.99</span>
+              <span className=" text-4xl md:text-5xl font-bold">$1.99</span>
               <span className="text-muted-foreground">/month</span>
             </div>
             <ul className="space-y-4 mb-6 flex-grow">
@@ -142,9 +152,11 @@ const SubscriptionPricing = () => {
 
           {/* Professional Plan */}
           <div className="flex flex-col p-6 bg-card rounded-lg shadow-lg border-2 border-primary">
-            <h3 className="text-2xl font-bold text-center mb-4">Professional</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-center mb-4">
+              Professional
+            </h3>
             <div className="text-center mb-6">
-              <span className="text-5xl font-bold">$2.99</span>
+              <span className="text-4xl md:text-5xl font-bold">$2.99</span>
               <span className="text-muted-foreground">/month</span>
             </div>
             <ul className="space-y-4 mb-6 flex-grow">
@@ -304,11 +316,12 @@ const SubscriptionPricing = () => {
             </button>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">
+              <h3 className="text-xl md:text-2xl font-bold mb-2">
                 Join our early access members!
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                You've selected the {selectedPlan.tier} plan. Be among the first to test it out.
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                You've selected the {selectedPlan.tier} plan. Be among the first
+                to test it out.
               </p>
             </div>
 
@@ -318,13 +331,13 @@ const SubscriptionPricing = () => {
                 placeholder="Enter your email to get notified first!"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full placeholder:text-sm md:placeholder:text-base"
                 required
               />
               <Button
                 type="submit"
                 variant="default"
-                className="w-full text-lg py-3"
+                className="w-full text-sm md:text-lg py-3"
               >
                 🚀 Notify Me
               </Button>

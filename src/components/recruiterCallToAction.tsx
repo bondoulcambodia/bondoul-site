@@ -23,18 +23,19 @@ const RecruiterCallToAction = () => {
 
   const handleRecruiterGetStarted = () => {
     setShowModal(true);
-    trackEvent("recruiter_get_started");
+    trackEvent("recruiter_get_started_CTA");
   };
 
   return (
     <>
       <section className="py-20 px-6 bg-gradient-primary text-white">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Find The Perfect Candidate?
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            Start Hiring Smarter Today
           </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join hundreds of recruiters who are finding the best talent with Bondoul.
+          <p className="text-lg md:text-xl mb-8 opacity-90">
+            Join Bondoul and connect with the young talent ready to make a
+            difference in your team.
           </p>
 
           <div className="max-w-md mx-auto mb-8">
@@ -75,12 +76,13 @@ const RecruiterCallToAction = () => {
             </button>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">
-                You're on the VIP list 💌
+              <h3 className="text-xl md:text-2xl font-bold mb-2">
+                We’re almost ready for you
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our Recruiter platform is almost ready — and you'll be among the first
-                to test it out. It's sleek, stress-free, and built just for recruiters like you.
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                Our full hiring platform is on the way, bringing you all the
+                tools you need to find, connect with, and hire young talent with
+                ease. We’re almost ready, and it’ll be in your hands very soon.
               </p>
             </div>
 
@@ -90,13 +92,13 @@ const RecruiterCallToAction = () => {
                 placeholder="Enter your email to get notified first!"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full"
+                className="w-full placeholder:text-sm md:placeholder:text-base"
                 required
               />
               <Button
                 type="submit"
                 variant="default"
-                className="w-full text-lg py-3"
+                className="w-full text-sm md:text-lg py-3"
               >
                 🚀 Notify Me
               </Button>

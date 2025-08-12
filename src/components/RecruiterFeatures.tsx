@@ -1,49 +1,49 @@
-
-import { CheckCircle, Target, Zap, TrendingUp, Users } from "lucide-react";
+import { CalendarDays, Target, DatabaseZap, Sprout, Users } from "lucide-react";
 
 const RecruiterFeatures = () => {
   const features = [
     {
-      icon: TrendingUp,
-      title: "Post Jobs",
+      icon: Sprout,
+      title: "Youth-Focused Talent Pool",
       description:
-        "Easily post job openings to our platform and reach a wide audience of qualified candidates.",
+        "A growing community of fresh-minded students and young professionals we’ve worked with for over two years.",
     },
     {
       icon: Target,
-      title: "Filter Candidates",
+      title: "Job Posting That Works",
       description:
-        "Our advanced filtering options help you narrow down the candidate pool to find the perfect fit.",
+        "Share opportunities that speak to and attract the right young talent.",
     },
     {
-      icon: Zap,
-      title: "Schedule Interviews",
+      icon: DatabaseZap,
+      title: "Recruitment Database",
       description:
-        "Our built-in scheduling tool makes it easy to coordinate interviews with candidates.",
+        "Build and manage your candidate pool for quick or future hiring. Post jobs and use smart search to find and invite top talent.",
     },
     {
-      icon: CheckCircle,
-      title: "Manage Applicants",
+      icon: CalendarDays,
+      title: "Easy Interview Scheduling",
       description:
-        "Keep track of all your applicants in one place with our applicant tracking system.",
+        "Organize interviews without endless emails or missed calls.",
     },
     {
       icon: Users,
-      title: "Build Your Database",
+      title: "Collaborative Hiring Tools",
       description:
-        "Build a database of qualified candidates for future job openings.",
+        "Work seamlessly with your team to find and secure the perfect fit.",
     },
   ];
 
   return (
     <section className="py-20 px-6 ">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-10 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
             What We Offer
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive suite of tools to streamline your recruitment process.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            We provide the tools and community you need to make hiring young
+            talent easy and efficient.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const RecruiterFeatures = () => {
               <div className="mb-4">
                 <feature.icon className="h-12 w-12 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 text-foreground">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground">{feature.description}</p>
@@ -74,7 +74,7 @@ const RecruiterFeatures = () => {
               <div className="mb-4">
                 <feature.icon className="h-12 w-12 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
+              <h3 className="text-lg md:text-xl font-semibold mb-3 text-foreground">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground">{feature.description}</p>
