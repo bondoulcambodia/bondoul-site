@@ -56,15 +56,14 @@ const SocialProof = () => {
           <div className="bg-gradient-to-br from-primary/10 to-background p-8 rounded-xl shadow-elegant">
             <blockquote className="text-xl italic text-foreground relative">
               <p className="mb-4">
-                "In today's competitive market, finding the right talent is
-                paramount. We built Bondoul to bridge the gap between
-                exceptional professionals and the innovative companies that need
-                them. Our commitment is to make that connection seamless,
-                efficient, and truly effective."
+                "We built Bondoul for you because we know how overwhelming it can be to figure out your career path. The people behing Bondoul? We're students and fresh grads just like you, we know what it's like to walk this journey alone at first.
+                <br></br>
+                <br></br>
+                Think of us as that friend who's always here to guide you, cheer you on, and connect you with the right opportunities."
               </p>
               <footer className="text-right not-italic">
                 <p className="font-bold text-primary">
-                  - John Doe, CEO of Bondoul
+                  - Bondoul Team
                 </p>
               </footer>
             </blockquote>
