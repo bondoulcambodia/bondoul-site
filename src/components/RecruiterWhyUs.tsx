@@ -8,7 +8,7 @@ const RecruiterWhyUs = () => {
       number: "2y+",
       label: "of HR experience in youth career development",
     },
-    { number: "5k+", label: "university students in our network" },
+    { number: "2.9k+", label: "University students in our network" },
   ];
 
   return (
@@ -50,9 +50,7 @@ const RecruiterWhyUs = () => {
                 look first.”
               </p>
               <footer className="text-right not-italic">
-                <p className="font-bold text-primary">
-                  - Sokhethida, CEO of Bondoul
-                </p>
+                <p className="font-bold text-primary">- Bondoul Team</p>
               </footer>
             </blockquote>
           </div>

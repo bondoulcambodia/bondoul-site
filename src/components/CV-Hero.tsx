@@ -55,9 +55,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Stop wasting time on clunky templates. Bondoul’s CV Builder lets you
-            build one strong CV and tweak it for each job. Fast. Simple. No
-            stress.
+            Forget messy templates and endless formatting headaches. With
+            Bondoul’s CV Builder, you create one solid CV, then customize it
+            quick and easy for every job. Fast. Simple. Stress-free.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

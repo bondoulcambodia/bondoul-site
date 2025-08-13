@@ -6,25 +6,30 @@ const Benefits = () => {
       icon: Settings,
       title: "ATS-Friendly",
       description:
-        "Our CVs are built to pass Applicant Tracking Systems. Your application gets seen, not filtered out.",
+        "Our CVs are built to pass Applicant Tracking Systems (ATS). ",
+      // description:
+      //   "Our CVs are built to pass Applicant Tracking Systems. Your application gets seen, not filtered out.",
     },
     {
       icon: Target,
       title: "Tailored for Every Job",
-      description:
-        "Quickly adjust your CV for different roles. No messy formatting. No wasted time.",
+      description: "Quickly adjust your CV for different roles.",
+      // description:
+      //   "Quickly adjust your CV for different roles. No messy formatting. No wasted time.",
     },
     {
       icon: Zap,
       title: "Save Time & Effort",
-      description:
-        "Stop rewriting your resume from scratch. Build once, customize infinitely.",
+      description: "Stop rewriting your resume from scratch.",
+      // description:
+      //   "Stop rewriting your resume from scratch. Build once, customize infinitely.",
     },
     {
       icon: CheckCircle,
       title: "Professional Design",
-      description:
-        "Your CV will always look clean and modern. No design skills needed.",
+      description: "Your CV will always look clean and modern.",
+      // description:
+      //   "Your CV will always look clean and modern. No design skills needed.",
     },
   ];
 
