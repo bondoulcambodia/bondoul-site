@@ -72,10 +72,10 @@ const SubscriptionTestimonials: FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-            What Our Clients Say
+            Real Success Stories
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hear from those who’ve found success with Bondoul.
+            Hear from Students and Young Professionals like YOU
           </p>
         </div>
 

@@ -13,7 +13,7 @@ const Subscription = () => {
   useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
       <SubscriptionHero />
       <SubscriptionFeatures />
 
