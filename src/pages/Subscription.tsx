@@ -8,12 +8,13 @@ import Navbar from "@/components/Navbar";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
 import SubscriptionHowItWorks from "@/components/SubscriptionHowItWorks";
 import ImageScroller from "@/components/ImageScroller";
+import Logo from "@/components/Logo";
 
 const Subscription = () => {
   useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
-
+      <Logo />
       <SubscriptionHero />
       <SubscriptionFeatures />
 

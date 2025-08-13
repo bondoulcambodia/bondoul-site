@@ -10,22 +10,6 @@ const SubscriptionHero = () => {
 
   return (
     <section className="relative min-h-[95vh] sm:min-h-screen w-full flex flex-col lg:grid grid-cols-1 lg:grid-cols-2 items-center justify-center bg-gradient-hero gap-8 lg:gap-0 pt-20 p-6 sm:p-10 lg:p-16">
-      <div className="absolute top-6 left-6 bg-white/80 backdrop-blur-md rounded-full shadow-md px-4 py-2 flex flex-row items-center gap-3 whitespace-nowrap">
-        <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
-          className="flex flex-row items-center gap-2"
-        >
-          <img
-            src="./src/assets/circle-blue.png"
-            alt="Bondoul Logo"
-            className="h-7 sm:h-10 w-auto"
-          />
-          <span className="font-bold text-base sm:text-lg tracking-tight text-gray-900">
-            Bondoul
-          </span>
-        </a>
-      </div>
 
       <div className="flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">

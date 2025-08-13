@@ -8,12 +8,13 @@ import Navbar from "@/components/Navbar";
 import RecruiterHero from "@/components/recruiterHero";
 import RecruiterCallToAction from "@/components/recruiterCallToAction";
 import Footer from "@/components/Footer";
+import Logo from "@/components/Logo";
 
 const Recruiter = () => {
   useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Logo />
       <RecruiterHero />
 
       <RecruiterFeatures />

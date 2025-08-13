@@ -6,12 +6,13 @@ import CallToAction from "@/components/CV-CallToAction";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useScrollTracking } from "@/hooks/useScrollTracking";
+import Logo from "@/components/Logo";
 
 const CVbuilder = () => {
   useScrollTracking();
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Logo />
       <Hero />
       {/* <ProblemSolution /> */}
       <Benefits />
